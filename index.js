@@ -16,9 +16,11 @@ function selectionSort(array) {
       if (array[j] < array[minValuePosition]) minValuePosition = j;
     }
 
-    let temp = array[i];
-    array[i] = array[minValuePosition];
-    array[minValuePosition] = temp;
+    if (i < minValuePosition) {
+      let temp = array[i];
+      array[i] = array[minValuePosition];
+      array[minValuePosition] = temp;
+    }
   }
 
   return array;
