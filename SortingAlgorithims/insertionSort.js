@@ -10,7 +10,6 @@
   WORST CASE: O(n^2)
   BEST CASE: O(n)
 */
-
 function insertionSort(array) {
   const sortedArray = [array[0]];
 
@@ -32,3 +31,5 @@ function insertionSort(array) {
 console.log(insertionSort([1, 2, 2, 5, 6, 7, 9, 10, 18, 20]));
 console.log(insertionSort([5, 10, 2, 5, 1, 6, 2, 9, 0, -1, 8, 20]));
 console.log(insertionSort([100, 90, 80, 70, 60, 50, 40, 30, 20, 10, 5, 4, 3, 2, 1, 0]));
+console.log(insertionSort(Array.apply(null, {length: 100000}).map(Function.call, Math.random)));
+
