@@ -13,9 +13,7 @@ function selectionSort(array) {
     let minValuePosition = i;
 
     for (let j = i; j < array.length; j++) {
-      if (array[j] < array[minValuePosition]) {
-        minValuePosition = j;
-      }
+      if (array[j] < array[minValuePosition]) minValuePosition = j;
     }
 
     let temp = array[i];
