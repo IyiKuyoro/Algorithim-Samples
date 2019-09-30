@@ -9,6 +9,8 @@
  *     In each pass, reset the 'noSwap' variable to true;
  * 
  * return the array to the calling function.
+ * BEST CASE: O(n)
+ * WORSE CASE: O(n^2)
 */
 
 function bubbleSort(array) {
